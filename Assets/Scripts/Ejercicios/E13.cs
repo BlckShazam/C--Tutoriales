@@ -104,7 +104,7 @@ public class E13 : MonoBehaviour {
 	// Ejemplo: La media de {5, 10, 3, 2} es 5. (5+10+3+2)/4 = 5
 	
 	
-
+		/*
 	void Start () {
 		
 		// 3a. Define un array de enteros llamado "valores" inicializandolo
@@ -129,6 +129,8 @@ public class E13 : MonoBehaviour {
 		// 3d. Calcula el valor de la media y sacala por log de la forma:
 		// Media obtenida: X
 		// Siento X el valor de la media obtenida.
+				int media = suma / valores.Length;
+				Debug.Log ("Media obtenida; "+media);
 
 		
 		
@@ -139,33 +141,41 @@ public class E13 : MonoBehaviour {
 		
 	}
 	
-	
+	*/
 	
 	// Ejercicio 4. Energia de enemigos.
 	// Comenta el bloque anterior y descomenta el bloque siguiente.
 	// Sigue las instrucciones paso a paso dentro el mismo.
 	
-	/*
-
+	
+		/*
 	void Start () {
 		
 		// 4a. Define un vector de valores enteros llamado "energiaEnemigos"
 		// inicializandolo a los siguientes valores:
 		// 100, 5, 0, 20, 8, 74, 0, 1, 0, 43
+				int[] energiaEnemigos = {100, 5, 0, 20, 8, 74, 0, 1, 0, 43};
 		
 		
 		// 4b. Define una variable entera llamada "enemigosVivos" inicializandola
 		// a cero.
-		
+				int enemigosVivos = 0;
 		
 		// 4c. Recorre el vector "energiaEnemigos" usando un bucle "for" y
 		// cuenta en "enemigosVivos" cuantos enemigos siguen vivos:
 		// (Los enemigos vivos tienen una energia mayor que cero)
-		
+				for(int cont = 0; cont< energiaEnemigos.Length; cont++){
+						if (energiaEnemigos [cont] > 0) {
+								enemigosVivos++;
+						}
+
+				}
+
 		
 		// 4d. Saca por log el numero de enemigos vivos de la forma:
 		// Enemigos vivos: X
 		// Siendo X el numero de enemigos vivos obtenido.
+				Debug.Log("Enemigos vivos: "+enemigosVivos);
 		
 		
 		// 4e. Haz que se ejecute este script y comprueba que el numero que
@@ -181,19 +191,20 @@ public class E13 : MonoBehaviour {
 	// Corrige todos los errores que se muestren en la consola.
 	// PISTA: Hay 9 errores!
 	
-	/*
-
+	
+/*
 	void Start () {	
-		
-		int valores = {4, 9, 4, 2, 8, 7, 5;
+
+				int[] valores = {4, 9, 4, 2, 8, 7, 5};
 			
-		For(int c=0, suma=0 ; c < valores.length , c++){
-			suma+=valores[c]
+				for(int c=0, suma=0 ; c < valores.Length ; c++){
+						suma+=valores[c];
+						Debug.Log("Suma de todos los valores: "+suma);
 		}
 		
-		Dabug.Log(Suma de todos los valores: "+suma);
+		
 	}
 
-	*/
 	
+*/	
 }
